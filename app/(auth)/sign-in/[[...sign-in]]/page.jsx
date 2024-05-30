@@ -30,7 +30,7 @@ export default function Page() {
             </a>
 
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Welcome to BesharamList
+              Welcome to LakhStack
             </h2>
           </div>
         </section>
@@ -59,7 +59,7 @@ export default function Page() {
               </a>
 
               <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                Welcome to BesharamList 🦑
+                Welcome to LakhStack 🦑
               </h1>
             </div>
 
