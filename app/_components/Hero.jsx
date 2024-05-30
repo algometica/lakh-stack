@@ -6,7 +6,7 @@ function Hero() {
             <div className="mx-auto max-w-screen-xl px-4 py- ">
                 <div className="mx-auto max-w-xl text-center">
                     <h1 className="text-3xl font-extrabold sm:text-5xl">
-                        The BesharamList
+                        The LakhStack
                     </h1>
 
                     <p className="mt-4 sm:text-xl/relaxed">
