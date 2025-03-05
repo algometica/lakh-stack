@@ -47,12 +47,13 @@ function Header() {
         </ul>
       </div>
       <div className='flex gap-2 items-center' id="navbar-default">
-        <Link href={'/add-new-listing'}>
-          <Button className='flex gap-2'><Plus className='h-5 w-3' />List</Button>
-        </Link>
+        {isSignedIn && (
+          <Link href={'/add-new-listing'}>
+            <Button className='flex gap-2'><Plus className='h-5 w-3' />List</Button>
+          </Link>
+        )}
 
-        {isSignedIn ?
-
+        {isSignedIn ? (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Image src={user?.imageUrl}
@@ -75,13 +76,7 @@ function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-
-          :
-          <Link href={'/sign-in'}>
-            <Button variant="outline">Login</Button>
-          </Link>
-        }
-
+        ) : null}
       </div>
     </div >
   )
