@@ -34,14 +34,18 @@ function Header() {
           <Image src={'/logo.svg'} width={100} height={100} alt='logo' />
         </Link>
         {/* <ul className='hidden sm:flex gap-10'>*/}
-        <ul className='sm:flex gap-5'>
+        <ul className='sm:flex gap-8'>
           <Link href={'/'}>
-            <li className={`'hover:text-primary font-medium text-sm cursor-pointer'
-              ${path == '/' && 'text-primary'}`}>Featured</li>
+            <li className={`transition-all duration-200 px-3 py-2 rounded-md hover:bg-gray-100 font-medium text-sm cursor-pointer
+              ${path === '/' ? 'text-primary bg-gray-50' : 'text-gray-600 hover:text-primary'}`}>
+              Featured
+            </li>
           </Link>
           <Link href={'/all-listings'}>
-            <li className={`'hover:text-primary font-medium text-sm cursor-pointer'
-              ${path == '/all-listings' && 'text-primary'}`}>All</li>
+            <li className={`transition-all duration-200 px-3 py-2 rounded-md hover:bg-gray-100 font-medium text-sm cursor-pointer
+              ${path === '/all-listings' ? 'text-primary bg-gray-50' : 'text-gray-600 hover:text-primary'}`}>
+              All
+            </li>
           </Link>
           {/* <li className='hover:text-primary font-medium text-sm cursor-pointer'>Agent Finder</li> */}
         </ul>
